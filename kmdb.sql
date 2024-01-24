@@ -4,6 +4,8 @@
 -- top-billed cast for each movie in the database.
 
 DROP TABLE IF EXISTS Movies;
+DROP TABLE IF EXISTS Actors;
+DROP TABLE IF EXISTS Roles;
 
 -- Recreate
 
@@ -15,6 +17,121 @@ CREATE  TABLE   Movies(
     Studio TEXT
 );
 
+INSERT INTO Movies (
+    movie,
+    Year_Released,
+    Rating,
+    Studio
+)   VALUES  (
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "Warner Bros."
+);
+
+INSERT INTO Movies (
+    movie,
+    Year_Released,
+    Rating,
+    Studio
+)   VALUES  (
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "Warner Bros."
+);
+
+INSERT INTO Movies (
+    movie,
+    Year_Released,
+    Rating,
+    Studio
+)   VALUES  (
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "Warner Bros."
+);
+
+-- Create Actors Table
+
+CREATE TABLE Actors (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Actor_Name TEXT
+);
+
+INSERT INTO Actors (
+    Actor_Name
+) VALUES(
+    "Christian Bale"
+);
+
+INSERT INTO Actors (
+    Actor_Name
+) VALUES(
+    "Michael Caine"
+);
+INSERT INTO Actors (
+    Actor_Name
+) VALUES(
+    "Liam Neeson"
+);
+INSERT INTO Actors (
+    Actor_Name
+) VALUES(
+    "Katie Holmes"
+);
+INSERT INTO Actors (
+    Actor_Name
+) VALUES(
+    "Gary Oldman"
+);
+INSERT INTO Actors (
+    Actor_Name
+) VALUES(
+    "Heath Ledger"
+);
+INSERT INTO Actors (
+    Actor_Name
+) VALUES(
+    "Aaron Echkart"
+);
+INSERT INTO Actors (
+    Actor_Name
+) VALUES(
+    "Maggie Gyllenhaal"
+);
+INSERT INTO Actors (
+    Actor_Name
+) VALUES(
+    "Tom Hardy"
+);
+INSERT INTO Actors (
+    Actor_Name
+) VALUES(
+    "Joseph Gordon-Levitt"
+);
+INSERT INTO Actors (
+    Actor_Name
+) VALUES(
+    "Anne Hathaway"
+);
+---Create Roles Table
+
+CREATE TABLE Roles (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    MovieID INTEGER,
+    ActorID INTEGER,
+    Role_Name TEXT
+);
+
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    ""
+);
 
 -- Requirements/assumptions
 --
