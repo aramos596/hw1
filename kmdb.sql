@@ -3,6 +3,19 @@
 -- The end product will be a report that prints the movies and the 
 -- top-billed cast for each movie in the database.
 
+DROP TABLE IF EXISTS Movies;
+
+-- Recreate
+
+CREATE  TABLE   Movies(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    movie TEXT,
+    Year_Released TEXT,
+    Rating TEXT,
+    Studio TEXT
+);
+
+
 -- Requirements/assumptions
 --
 -- - There will only be three movies in the database – the three films
