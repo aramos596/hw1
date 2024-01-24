@@ -201,15 +201,6 @@ INSERT INTO Roles (
     4,
     "Rachel Dawes"
 );
-INSERT INTO Roles (
-    MovieID,
-    ActorID,
-    RoleName
-) VALUES(
-    2,
-    4,
-    "Rachel Dawes"
-);
 --Gary Oldman
 INSERT INTO Roles (
     MovieID,
@@ -238,7 +229,66 @@ INSERT INTO Roles (
     5,
     "Commissioner Gordon"
 );
-
+--Heath Ledger
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    2,
+    6,
+    "Joker"
+);
+--Aaron Eckhart
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    2,
+    7,
+    "Harvey Dent"
+);
+--Maggie Gyllenhaal
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    2,
+    8,
+    "Rachel Dawes"
+);
+--Tom Hardy
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    3,
+    9,
+    "Bane"
+);
+--Joseph Gordon-Levitt
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    3,
+    10,
+    "John Blake"
+);
+--Anne Hathaway
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    3,
+    11,
+    "Selina Kyle"
+);
 
 -- Requirements/assumptions
 --
