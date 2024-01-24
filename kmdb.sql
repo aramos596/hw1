@@ -122,7 +122,7 @@ CREATE TABLE Roles (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     MovieID INTEGER,
     ActorID INTEGER,
-    Role_Name TEXT
+    RoleName TEXT
 );
 
 INSERT INTO Roles (
@@ -130,8 +130,115 @@ INSERT INTO Roles (
     ActorID,
     RoleName
 ) VALUES(
-    ""
+    1,
+    1,
+    "Bruce Wayne"
 );
+--Christian Bale
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    2,
+    1,
+    "Bruce Wayne"
+);
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    3,
+    1,
+    "Bruce Wayne"
+);
+--Michael Caine
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    1,
+    2,
+    "Alfred"
+);
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    2,
+    2,
+    "Alfred"
+);
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    3,
+    2,
+    "Alfred"
+);
+--Liam Neeson
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    1,
+    3,
+    "Ra's Al Ghul"
+);
+--Katie Holmes
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    1,
+    4,
+    "Rachel Dawes"
+);
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    2,
+    4,
+    "Rachel Dawes"
+);
+--Gary Oldman
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    1,
+    5,
+    "Commissioner Gordon"
+);
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    2,
+    5,
+    "Commissioner Gordon"
+);
+INSERT INTO Roles (
+    MovieID,
+    ActorID,
+    RoleName
+) VALUES(
+    3,
+    5,
+    "Commissioner Gordon"
+);
+
 
 -- Requirements/assumptions
 --
