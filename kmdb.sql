@@ -290,6 +290,10 @@ INSERT INTO Roles (
     "Selina Kyle"
 );
 
+--Time to try and put this all together! 
+
+
+
 -- Requirements/assumptions
 --
 -- - There will only be three movies in the database – the three films
@@ -404,6 +408,7 @@ INSERT INTO Roles (
 .print "Movies"
 .print "======"
 .print ""
+select movie, Year_Released, Rating, Studio from Movies;
 
 -- The SQL statement for the movies output
 -- TODO!
@@ -413,7 +418,11 @@ INSERT INTO Roles (
 .print "Top Cast"
 .print "========"
 .print ""
-
+select movie, Actors.Actor_Name, Roles.RoleName
+from Movies
+inner join Roles on Actors.id=Roles.ActorID
+inner join Movies on Movies.id=Roles.MovieID
+;
 
 -- The SQL statement for the cast output
 -- TODO!
