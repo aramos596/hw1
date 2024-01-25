@@ -291,9 +291,22 @@ INSERT INTO Roles (
 );
 
 --Time to try and put this all together! 
+.print "Movies"
+.print "======"
+.print ""
+select movie, Year_Released, Rating, Studio from Movies;
 
 
-
+.print ""
+.print "Top Cast"
+.print "========"
+.print ""
+select Movies.movie, Actors.Actor_Name, RoleName
+from Roles
+inner join Movies on Roles.MovieID=Movies.id
+inner join Actors on Roles.ActorID=Actors.id
+order by Movies.movie
+;
 -- Requirements/assumptions
 --
 -- - There will only be three movies in the database – the three films
@@ -405,24 +418,25 @@ INSERT INTO Roles (
 -- TODO!
 
 -- Prints a header for the movies output
-.print "Movies"
-.print "======"
-.print ""
-select movie, Year_Released, Rating, Studio from Movies;
+--.print "Movies"
+--.print "======"
+--.print ""
+--select movie, Year_Released, Rating, Studio from Movies;
 
 -- The SQL statement for the movies output
 -- TODO!
 
 -- Prints a header for the cast output
-.print ""
-.print "Top Cast"
-.print "========"
-.print ""
-select movie, Actors.Actor_Name, Roles.RoleName
-from Movies
-inner join Roles on Actors.id=Roles.ActorID
-inner join Movies on Movies.id=Roles.MovieID
-;
+--.print ""
+--.print "Top Cast"
+--.print "========"
+--.print ""
+--select Movies.movie, Actors.Actor_Name, RoleName
+--from Roles
+--inner join Movies on Roles.MovieID=Movies.id
+--inner join Actors on Roles.ActorID=Actors.id
+--order by Movies.movie
+--;
 
 -- The SQL statement for the cast output
 -- TODO!
